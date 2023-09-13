@@ -57,19 +57,62 @@
         </div>
       </div>
 
-      <div>
+      <div class="grey_container">
         <div class="get_in_touch">
           <div><h1>Get in touch</h1></div>
           <div>
             <p>Contact:</p>
             <p>lbeniakh@kse.org.ua</p>
-            <ul>
-              <li><i class="fa-brands fa-linkedin"></i></li>
-              <li><i class="fa-brands fa-instagram"></i></li>
+            <ul class="in_row">
+              <li class="icons"><i class="fa-brands fa-linkedin"></i></li>
+              <li class="icons"><i class="fa-brands fa-instagram"></i></li>
             </ul>
           </div>
         </div>
-        <div></div>
+        <div class="get_in_touch">
+          <p>I'm interested in:</p>
+          <button>Hovered button</button>
+          <button>Standard</button>
+          <button>Standard</button>
+          <button>Standard</button>
+          <button>Standard</button>
+          <button>Standard</button>
+          <form action="">
+            <ul>
+              <li>
+                <input type="text" id="user_name" placeholder="Your name*" />
+              </li>
+              <li>
+                <input
+                  type="text"
+                  id="company_name"
+                  placeholder="Company name*"
+                />
+              </li>
+              <li>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Email address*"
+                  class="halves"
+                />
+                <input
+                  type="number"
+                  id="phone"
+                  placeholder="Phone number*"
+                  class="halves"
+                />
+              </li>
+            </ul>
+            <button
+              type="button"
+              onclick="sendForm()"
+              style="align-self: center"
+            >
+              SendForm
+            </button>
+          </form>
+        </div>
       </div>
     </main>
   </body>

@@ -44,6 +44,9 @@ i {
   font-size: 24px;
 }
 li {
+  list-style: none;
+}
+li.icons {
   background-color: #b7ced6;
   border: 1px solid rgb(136, 136, 136);
   border-radius: 50%;
@@ -61,11 +64,47 @@ li:active {
   background: #000;
   color: #fff;
 }
-ul {
+ul.in_row {
   display: flex;
   list-style: none;
+}
+ul {
+  padding: 10px;
 }
 .get_in_touch {
   padding: 30px;
   margin: 30px;
+  flex: 1;
+}
+button {
+  border-radius: 20px;
+  border-width: 2px;
+  border-color: #887b81;
+  font-size: 20px;
+}
+button:hover {
+  background: #01a0fe;
+  cursor: pointer;
+}
+input {
+  border-radius: 20px;
+  border-width: 1px;
+  border-color: #887b81;
+  background-color: #fff;
+  color: #887b81;
+  width: 100%;
+  font-size: 20px;
+  flex: 2 2;
+  padding: 5px;
+}
+input.halves {
+  width: 47%;
+}
+.grey_container {
+  display: flex;
+  justify-content: space-between;
+}
+form {
+  padding: 10px;
+  align-items: center;
 }
