@@ -14,7 +14,7 @@
   align-items: center;
   padding: 16px;
   height: 60%;
-  font-family: "Acme";
+  font-family: "Alef";
 }
 .get_in_touch {
   display: flex;
@@ -25,6 +25,11 @@
   flex: 1;
   padding: 20px;
   margin: 190px;
+}
+.interest .interest-1,
+.interest .inputs,
+.interest .interest-3 {
+  margin-bottom: 30px;
 }
 
 .image-container {
@@ -40,7 +45,7 @@ img {
 }
 
 body {
-  background-color: #ededed;
+  background-color: #eee;
   color: rgb(62, 33, 4);
 }
 
@@ -52,8 +57,6 @@ h1 {
 }
 
 p {
-  font-size: 20px;
-  font-family: "Almendra";
 }
 
 i {
@@ -64,7 +67,7 @@ i {
 
 i {
   background-color: #ededed;
-  border: 1px solid #ccc;
+  border: 1px solid #cdcdcd;
   border-radius: 50%;
   padding: 5px;
   margin: 10px;
@@ -86,44 +89,90 @@ i:active {
 }
 
 /* Buttons */
-
 button {
   border-radius: 20px;
-  border-width: 2px;
-  border-color: #887b81;
-  font-size: 20px;
+  border: 1px solid #cdcdcd;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Acme";
+  padding: 10px;
+  margin: 10px;
 }
+
 button:hover {
-  background: #01a0fe;
+  background: #0168fc;
   cursor: pointer;
+  color: white;
+}
+button:active {
+  color: #0168fc;
+  cursor: pointer;
+  background: white;
+}
+
+#submit {
+  background: #0168fc;
+  cursor: pointer;
+  color: white;
+}
+#submit:hover {
+  color: #0168fc;
+  cursor: pointer;
+  background: white;
+}
+#submit:active {
+  cursor: pointer;
+  background-color: #fff;
+  color: #cdcdcd;
 }
 
 /* Input */
 
 input {
   border-radius: 50px;
-  border-width: 1px;
-  border-color: #ccc;
+  border: 1px solid #cdcdcd;
   background-color: #fff;
-  color: #ccc;
+  color: #cdcdcd;
   width: 100%;
   font-size: 16px;
-  font-weight: 550;
+  font-weight: 500;
   font-family: "Acme";
   flex: 2 2;
-  padding: 4px;
+  padding: 10px;
+  margin: 10px;
+}
+/* Why it doesn't work? */
+input:active {
+  border: 1px solid #cdcdcd;
+}
+#user_name:active {
+  border: 1px solid #cdcdcd;
+}
+input::placeholder {
+  color: #cdcdcd;
+}
+#email,
+#phone {
+  width: 50%;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
 }
 
-input::placeholder {
-  color: #ccc;
+.double {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
+
 form {
   padding: 10px;
   align-items: center;
 }
 
 #firmly {
-  gap: 12px;
+  width: 100%;
 }
 .column {
   display: flex;
