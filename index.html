@@ -20,26 +20,40 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles\sheet1.css" />
-    <link rel="stylesheet" href="" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="styles\containers.css" />
+    <link rel="stylesheet" href="styles\i.css" />
+    <link rel="stylesheet" href="styles\inputs.css" />
+    <link rel="stylesheet" href="styles\buttons.css" />
   </head>
   <body>
-    <div class="Top Bar">
-      <nav>
+    <nav>
+      <div class="Top-Bar">
         <div class="on_the_left">
-          <button>About us</button>
-          <button>Link 2</button>
-          <button>Very active button</button>
-          <button>Important link</button>
-          <button>Contacts</button>
-          <button>Hovered button</button>
+          <i
+            class="fa-brands fa-linkedin"
+            style="line-height: 1.5; border: 0px"
+          ></i>
+        </div>
+        <div class="in_the_middle">
+          <button class="top">About us</button>
+          <button class="top">Link 2</button>
+          <button class="top">Very active button</button>
+          <button class="top">Important link</button>
+          <button class="top">Contacts</button>
+          <button class="top">Hovered button</button>
         </div>
         <div class="on_the_right">
-          <button>Secondary button</button>
-          <button>Primary button</button>
+          <button class="top">
+            <img
+              src="images\Leading icon.png"
+              alt="\/"
+              style="height: 13px"
+            />Secondary button
+          </button>
+          <button class="submit">Primary button</button>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
 
     <main>
       <div class="container">
@@ -74,8 +88,8 @@
           </div>
         </div>
         <div class="interest">
-          <form action="" id="firmly">
-            <div class="interest-1">
+          <form action="">
+            <div class="inter">
               <p style="font-family: 'Alef'; font-size: 20px">
                 I'm interested in:
               </p>
@@ -99,10 +113,10 @@
                 <input type="number" id="phone" placeholder="Phone number*" />
               </div>
             </div>
-            <div class="interest-3">
+            <div class="inter">
               <button
                 type="button"
-                id="submit"
+                class="submit"
                 onclick="sendForm()"
                 style="align-self: center"
               >
