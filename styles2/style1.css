@@ -1,0 +1,20 @@
+th {
+  background-color: #c4b91b;
+  color: rgb(81, 41, 41);
+}
+tr:nth-child(odd) {
+  background-color: #ffee33;
+}
+tr:nth-child(even) {
+  background-color: #b2c166;
+}
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border: 2px solid gold;
+}
+table {
+  border: 12px solid rgb(184, 116, 21);
+  border-style: groove;
+}

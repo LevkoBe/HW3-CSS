@@ -1,0 +1,21 @@
+th {
+  background-color: #1b75c4;
+  color: rgb(41, 52, 81);
+}
+tr:nth-child(odd) {
+  background-color: #5c5ed7;
+}
+tr:nth-child(even) {
+  background-color: #5e7aa8;
+}
+th,
+td {
+  padding: 30px;
+  text-align: right;
+  border-bottom: 6px solid #000000;
+  border: 5px solid rgb(115, 25, 138);
+}
+table {
+  border: 15px solid rgb(84, 57, 171);
+  border-style: dotted;
+}
